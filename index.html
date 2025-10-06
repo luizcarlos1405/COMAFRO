@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site oficial da COMAFRO – Em construção">
+  <title>COMAFRO | Em Construção</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@700&display=swap');
+
+    :root {
+      --cor-fundo: #fdf7f0;
+      --cor-texto: #222;
+      --cor-primaria: #00843D; /* verde africano */
+      --cor-secundaria: #E03C31; /* vermelho */
+      --cor-destaque: #F2AF29; /* dourado */
+      --cor-escura: #1A1A1A;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      background-image: radial-gradient(circle at top left, #F2AF29 2px, transparent 2px),
+                        radial-gradient(circle at bottom right, #E03C31 2px, transparent 2px);
+      background-size: 40px 40px;
+    }
+
+    .logo {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: var(--cor-primaria);
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    .logo::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: var(--cor-destaque);
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    h1 {
+      color: var(--cor-escura);
+      font-size: 1.8rem;
+      margin-top: 1rem;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+      max-width: 400px;
+      margin: 0.5rem auto;
+      line-height: 1.5;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.05); }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">COMAFRO</div>
+  <h1>Nosso site está em construção</h1>
+  <p>Estamos preparando um novo espaço digital para fortalecer e celebrar a cultura afro-brasileira.<br>
+  Em breve, novidades no <strong>comafro.org</strong>.</p>
+  <div class="footer">© 2025 COMAFRO — Todos os direitos reservados</div>
+</body>
+</html>
